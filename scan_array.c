@@ -3,6 +3,8 @@
 
 
 
+// Scan a array of unknown size and print it
+
 int main(int argc, char const *argv[])
 {
     
