@@ -1,22 +1,24 @@
-#include <stdio.h>
-int atoi(char[]);
 
+#include <stdio.h>
+
+int calSum(int, int);
+
+// GNU c compiler
 int main()
 {
-    char s[] = "123";
-    printf("%d", atoi(s));
+    int a, b, s;
+
+    printf("Enter two numbers: ");
+    scanf("%d %d", &a, &b);
+
+    s = calSum(a,b);
+    printf("Sum is: %d", s);
 
     return 0;
 }
 
-int atoi(char s[])
+
+int calSum(int num1, int naman)
 {
-    printf("Input variable is : %s\n", s);
-    int i, n;
-    n = 0;
-    for (i = 0; s[i] >= '0' && s[i] <= '9'; ++i)
-    {
-        n = 10 * n + (s[i] - '0');
-    }
-    return n;
+    return num1 + naman;
 }
